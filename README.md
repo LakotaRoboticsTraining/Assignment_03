@@ -158,32 +158,27 @@ In `main`: `double doubleSum = add(2.0, 22.8);` and print it.
 
 ## Check your understanding
 
-1. What is the difference between defining and calling a method?
+1. <details>
+     <summary>What is the difference between defining and calling a method?</summary>
+     Define writes it; call runs it.
+   </details>
+2. <details>
+     <summary>What does `void` mean?</summary>
+     No value is returned.
+   </details>
+3. <details>
+     <summary>What does `return value1 + value2;` do?</summary>
+     Sends the sum back to the caller.
+   </details>
+4. <details>
+     <summary>Why can two methods both be named `add`?</summary>
+     Overloading - different parameter types.
+   </details>
+5. <details>
+     <summary>In `greet("Michael")`, what is the argument and what is the parameter?</summary>
+     Argument `"Michael"`; parameter `value`.
+   </details>
 
-2. What does void mean?
-
-3. What does return value1 + value2; do?
-
-4. Why can two methods both be named add?
-
-5. In greet("Michael"), what is the argument and what is the parameter?
-
-Answers on next page
-
-Looking ahead
+## Looking ahead
 
 Next: decisions with if / else so programs can choose behavior based on values.
-
----
-
-Answers
-
-(1) Define writes it; call runs it.
-
-(2) No value returned.
-
-(3) Sends the sum back.
-
-(4) Overloading - different parameter types.
-
-(5) Argument "Michael"; parameter value.
