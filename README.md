@@ -1,8 +1,8 @@
 # Lesson 3: Methods
 
-Java to Robot Code — Student Training
+Java to Robot Code - Student Training
 
-Goal: Write and call your own methods — including void methods, methods that return a value, and two methods with the same name but different parameter types (overloading).
+Goal: Write and call your own methods - including void methods, methods that return a value, and two methods with the same name but different parameter types (overloading).
 
 Time: About 35-45 minutes
 
@@ -18,7 +18,7 @@ Before this lesson: Lessons 1-2 (package, Main, main, printing, variables, int/d
 - Method overloading (same name, different parameter types)
 ## Why this matters for robots
 
-Methods let you name a chunk of work — greet, add, isRunning — and reuse it from main instead of one giant block of code.
+Methods let you name a chunk of work - greet, add, isRunning - and reuse it from main instead of one giant block of code.
 
 ## File setup
 
@@ -63,7 +63,7 @@ Notice how both methods call add, but the variables they assign to are of differ
 
 ## Anatomy of a method
 
-void method — does something, returns nothing
+void method - does something, returns nothing
 
 public static void greet(String value) {
 
@@ -136,7 +136,7 @@ Putting a new method inside main
 
 Edit `Main.java`. Implement the methods, then call them from `main`.
 
-### Challenge 1 â€” greet
+### Challenge 1 - greet
 
 Write `public static void greet(String value)` that prints:
 
@@ -144,13 +144,13 @@ Write `public static void greet(String value)` that prints:
 
 Call it from `main` (for example `greet("Michael");`).
 
-### Challenge 2 â€” add for int
+### Challenge 2 - add for int
 
 Write `public static int add(int value1, int value2)` that **returns** the sum.
 
 In `main`: `int intSum = add(5, 20);` and print it.
 
-### Challenge 3 â€” overloaded add for double
+### Challenge 3 - overloaded add for double
 
 Write `public static double add(double value1, double value2)` that returns the sum.
 
@@ -184,6 +184,6 @@ Answers
 
 (3) Sends the sum back.
 
-(4) Overloading — different parameter types.
+(4) Overloading - different parameter types.
 
 (5) Argument "Michael"; parameter value.
