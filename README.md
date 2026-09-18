@@ -39,7 +39,7 @@ Keep the package line. Methods sit outside of main, not inside of main.
 
 ## The big idea
 
-A method is a named block of code that does a job. You already know main, main is a method.  Now you’ll write more.
+A method is a named block of code that does a job. You already know main, main is a method.  Now you'll write more.
 
 - Define the method (write the recipe)
 - Call the method (use the recipe)
@@ -134,7 +134,9 @@ Putting a new method inside main
 
 ## Try it yourself
 
-Edit `Main.java`. Implement the methods, then call them from `main`.
+Edit `Main.java`. Implement the methods there, then call them from `main`.
+
+Do **not** edit `MainTest.java` - that file checks your work automatically when you open a pull request. You only need to change `Main.java`.
 
 ### Challenge 1 - greet
 
