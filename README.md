@@ -134,9 +134,9 @@ Putting a new method inside main
 
 ## Try it yourself
 
-Edit `Main.java`. Implement the methods there, then call them from `main`.
+Edit `src/main/java/Main.java`. Implement the methods there, then call them from `main`.
 
-Do **not** edit `MainTest.java` - that file checks your work automatically when you open a pull request. You only need to change `Main.java`.
+Do **not** edit `src/test/java/MainTest.java` - that file checks your work automatically when you open a pull request. You only need to change `src/main/java/Main.java`.
 
 ### Challenge 1 - greet
 
