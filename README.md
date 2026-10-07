@@ -45,21 +45,55 @@ A method is a named block of code that does a job. You already know main, main i
 - Call the method (use the recipe)
 ## Calling a method
 
+You call (use) a method by writing its name and parentheses. Put those calls **inside** `main`, because that is where your program starts (Lesson 1).
+
+A call looks like this:
+
+```java
 greet("Michael");
-
-That calls greet and passes the String "Michael".
-
-```java
-int intSum = add(5, 20);
-System.out.println("intSum = " + intSum);
 ```
 
+That runs `greet` and passes the String `"Michael"` as the argument.
+
+Here is a complete `Main` showing calls **inside** `main`. The method definitions stay **outside** `main` (but still inside the class):
+
 ```java
-double doubleSum = add(2.0, 22.8);
-System.out.println("doubleSum = " + doubleSum);
+public class Main {
+    public static void main(String[] args) {
+        // Calls go HERE, inside main
+        greet("Michael");
+
+        int intSum = add(5, 20);
+        System.out.println("intSum = " + intSum);
+
+        double doubleSum = add(2.0, 22.8);
+        System.out.println("doubleSum = " + doubleSum);
+    }
+
+    // Method definitions go HERE, outside main
+    public static void greet(String value) {
+        System.out.println("Hello " + value + ", nice to meet you.");
+    }
+
+    public static int add(int value1, int value2) {
+        return value1 + value2;
+    }
+
+    public static double add(double value1, double value2) {
+        return value1 + value2;
+    }
+}
 ```
 
-Notice how both methods call add, but the variables they assign to are of different types (int versus double).  Java picks which add to use based on the types you pass (int vs double).
+How to read the calls in `main`:
+
+1. `greet("Michael");` - run `greet`; it prints something (void, so no value comes back)
+2. `int intSum = add(5, 20);` - run the int `add`, store the returned sum in `intSum`, then print it
+3. `double doubleSum = add(2.0, 22.8);` - run the double `add`, store the returned sum, then print it
+
+Notice both calls use the name `add`, but the variables are different types (`int` vs `double`). Java picks which `add` to use based on the types you pass. That is overloading (more below).
+
+**Remember:** write the call inside `main`. Write the method itself outside `main`.
 
 ## Anatomy of a method
 
